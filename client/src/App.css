@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.App {
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: grey;
+}
+
+h4:hover {
+  color: black;
+}
+
+.black {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 0.5;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  line-height: 1;
+  text-align: left;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.info span,
+.description span {
+  font-weight: bold;
+}
+
+img {
+  max-width: 50vw;
+}
+
+/* Spinner */
+
+#loading {
+  display: block;
+  margin: 5rem auto;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: black;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
